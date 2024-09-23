@@ -1,0 +1,15 @@
+/* src/pages/Home.css */
+
+.wallpaper-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .wallpaper-grid img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

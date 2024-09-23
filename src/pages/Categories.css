@@ -1,0 +1,24 @@
+/* src/pages/Categories.css */
+
+.wallpaper-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  select {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+  }
+  
+  select option {
+    background-color: #333;
+    color: #fff;
+  }
+  

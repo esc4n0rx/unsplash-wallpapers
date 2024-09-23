@@ -1,0 +1,36 @@
+/* src/components/WallpaperCard.css */
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .card-info {
+    padding-top: 10px;
+  }
+  
+  .card-info p {
+    margin: 5px 0;
+    color: #ccc;
+  }
+  
+  .card-info a {
+    color: #ff5e57;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
