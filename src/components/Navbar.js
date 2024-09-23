@@ -1,14 +1,20 @@
-// src/components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaFire, FaStar, FaThList } from 'react-icons/fa'; // Ícones do react-icons
 import './Navbar.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <Link to="/">Novidades</Link>
-      <Link to="/mais-curtidos">Mais Curtidos</Link>
-      <Link to="/categorias">Categorias</Link>
+      <Link to="/novidades">
+        <FaFire size={24} /> {/* Ícone para "Novidades" */}
+      </Link>
+      <Link to="/categorias">
+        <FaThList size={24} /> {/* Ícone para "Categorias" */}
+      </Link>
+      <Link to="/em-alta">
+        <FaStar size={24} /> {/* Ícone para "Em Alta" */}
+      </Link>
     </nav>
   );
 };

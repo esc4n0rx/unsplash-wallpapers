@@ -1,4 +1,3 @@
-// src/pages/Categories.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import WallpaperCard from '../components/WallpaperCard';
@@ -24,7 +23,10 @@ const Categories = () => {
       <select onChange={(e) => setCategory(e.target.value)} value={category}>
         <option value="nature">Nature</option>
         <option value="animals">Animals</option>
-        <option value="city">City</option>
+        <option value="travel">Travel</option>
+        <option value="technology">Technology</option>
+        <option value="architecture">Architecture</option>
+        <option value="people">People</option>
       </select>
 
       <div className="wallpaper-grid">

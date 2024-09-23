@@ -17,12 +17,12 @@ const WallpaperCard = ({ wallpaper }) => {
       {isModalOpen && (
         <div className={`modal ${isModalOpen ? 'active' : ''}`}>
           <div className="modal-content">
+            <button className="close-modal" onClick={toggleModal}>X</button> {/* Botão de fechar */}
             <h2>{wallpaper.description || "Sem descrição"}</h2>
             <p>❤️ {wallpaper.likes} likes</p>
             <a href={wallpaper.links.download} target="_blank" rel="noopener noreferrer">
               Baixar Wallpaper
             </a>
-            <button onClick={toggleModal}>Fechar</button>
           </div>
         </div>
       )}

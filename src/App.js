@@ -9,13 +9,12 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        {/* Conteúdo principal */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/categorias" element={<Categories />} />
         </Routes>
 
-        {/* Navbar estilo dock */}
+        
         <Navbar />
       </div>
     </Router>
