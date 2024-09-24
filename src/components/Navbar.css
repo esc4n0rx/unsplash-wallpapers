@@ -1,27 +1,28 @@
 
 .navbar {
-    background-color: #333;
-    padding: 10px;
-    position: fixed;
-    bottom: 10px; 
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    border-radius: 30px;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
-  }
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  bottom: 20px; /* Mantém ela flutuando um pouco acima do rodapé */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Mais compacta */
+  border-radius: 40px; /* Cantos arredondados */
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Efeito de sombra para parecer que está flutuando */
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
   
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    background-color: #444;
-    border-radius: 50%;
-    padding: 10px;
-  }
-  
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #444;
+  border-radius: 50%;
+  padding: 10px;
+}

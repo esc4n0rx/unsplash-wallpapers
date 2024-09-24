@@ -1,23 +1,24 @@
 /* src/components/WallpaperCard.css */
-
 .card {
-    background-color: #1e1e1e;
-    border-radius: 20px;
-    overflow: hidden;
-    padding: 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.3); /* Efeito de borda infinita */
+}
   
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .thumbnail {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-  }
+.card:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail {
+  width: 100%;
+  height: 250px; /* Ajuste para manter o formato vertical */
+  object-fit: cover;
+  border-radius: 15px;
+}
   
   .card-info {
     padding-top: 10px;
