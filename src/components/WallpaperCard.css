@@ -1,81 +1,89 @@
-/* src/components/WallpaperCard.css */
-.card {
-  background-color: #1e1e1e;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 10px;
-  text-align: center;
-  transition: transform 0.3s ease;
-  box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.3); /* Efeito de borda infinita */
+.wallpaper-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards por linha no mobile */
+  gap: 15px; /* Espaçamento entre os cards */
+  padding: 15px; /* Padding geral para a grid */
 }
-  
-.card:hover {
-  transform: scale(1.05);
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Mantém o tamanho consistente do card */
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: none; /* Remove sombra */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .thumbnail {
   width: 100%;
-  height: 250px; /* Ajuste para manter o formato vertical */
-  object-fit: cover;
-  border-radius: 15px;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha todo o card */
+  border-radius: 20px; /* Mantém o efeito de borda arredondada */
+  display: block;
+  transition: transform 0.3s ease-in-out; /* Adiciona um efeito suave de hover */
 }
-  
-  .card-info {
-    padding-top: 10px;
-  }
-  
-  .card-info p {
-    margin: 5px 0;
-    color: #ccc;
-  }
-  
-  .card-info a {
-    color: #ff5e57;
-    text-decoration: none;
-    font-weight: bold;
-  }
+
+.thumbnail:hover {
+  transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+}
+.card-info {
+  padding-top: 10px;
+}
+    
+.card-info p {
+  margin: 5px 0;
+  color: #ccc;
+}
+    
+.card-info a {
+  color: #ff5e57;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #1e1e1e;
-    padding: 20px;
-    border-radius: 20px;
-    z-index: 1001;
-    width: 90%;
-    max-width: 500px;
-    height: auto;
-  }
-  
-  .modal-content {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .modal-content p, .modal-content h2 {
-    margin: 10px 0;
-    text-align: center;
-  }
-  
-  .modal-content a {
-    color: #ff5e57;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  .close-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 1001;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+}
+    
+.modal-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+    
+.modal-content p, .modal-content h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+    
+.modal-content a {
+  color: #ff5e57;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+    
